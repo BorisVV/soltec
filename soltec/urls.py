@@ -21,3 +21,8 @@ urlpatterns = [
     path('', include('altura.urls')),
     path('admin/', admin.site.urls),
 ]
+
+# TODO: Might need removed..if not used.
+# if you're running this from python manage.py runserver you'll need to include the following in your urls.py
+# urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+# urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

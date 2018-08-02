@@ -136,3 +136,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# **************************************************************************************
+#StockOverflow
+# If you're running it in production make sure you've run python manage.py collectstatic
+# You'll also need the following in settings.py, replacing project with your app
+
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, "altura/static"),
+# )
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# If you have 'django.contrib.staticfiles' in your INSTALLED_APPS you don't need to add
+# to urlpatterns. It will work on the development server with debug on
+# ***************************************************************************************
