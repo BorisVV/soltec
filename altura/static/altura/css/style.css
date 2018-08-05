@@ -1,6 +1,24 @@
 
 .fakeimg {
     height: 200px;
-    background-color: orange
+    background-color: orange;
     /* background: #aaa; */
+}
+
+.empresa-bg {
+  background: url("../../altura/img/foto_empresa.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hacalogo {
+  vertical-align: baseline;
+  height: 60px;
+  width: 160px;
+}
+
+#f05297450 {
+  height: 104px;
+  width: 104px;
 }
