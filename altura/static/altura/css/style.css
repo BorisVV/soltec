@@ -6,10 +6,17 @@
 }
 
 .empresa-bg {
-  background: url("../../altura/img/foto_empresa.jpg") no-repeat;
+  background: url("../../altura/img/escalera_bg_empresa.jpg") no-repeat;
   background-size: cover;
   padding-top: 20px;
   padding-bottom: 20px;
+  opacity: 0.3
+
+}
+
+.empresa-bg, .h1, .h2, .p {
+  font-weight: bold;
+  color: #000000;
 }
 
 .hacalogo {
@@ -21,4 +28,8 @@
 #f05297450 {
   height: 104px;
   width: 104px;
+}
+#foto_carritos {
+  height: 260px;
+  width: 260px;
 }

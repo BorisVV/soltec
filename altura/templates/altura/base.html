@@ -16,29 +16,47 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>{% block title %} {% endblock %}SoltecAltura</title>
+
   </head>
 
   <body>
-    <div class="container-fluid mt-2 mb-4">
-      <div class="container mb-4">
-        <ul class="nav nav-pills nav-justified">
-          <li class="nav-item border border-danger rounded">
-            <a class="nav-link active" href="{% url 'home'%}">Home</a>
-          </li>
-          <li class="nav-item border border-danger rounded">
-            <a class="nav-link active" href="#">Productos</a>
-          </li>
-          <li class="nav-item border border-danger rounded">
-            <a class="nav-link active" href="#">Noticias</a>
-          </li>
-          <li class="nav-item border border-danger rounded">
-            <a class="nav-link active" href="#">Contactar</a>
-          </li>
-          <li class="nav-item border border-danger rounded">
-            <a class="nav-link active" href="{% url 'empresa' %}">Empresa</a>
-          </li>
-        </ul>
+    <div class="container-fluid bg-light">
+      <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center">
+            <a href="/" class="navbar-brand d-flex w-50 mr-auto">Logo</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <ul class="navbar-nav w-100 justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item disabled">
+                        <a class="nav-link" href="//codeply.com">Productos</a></a>
+                    </li>
+                    <li class="nav-item disabled">
+                        <a class="nav-link" href="#">Contactar</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'empresa' %}">Empresa</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Right</a>
+                    </li> -->
+                    <li class="float-right">
+                      <form class="form-inline" action="/action_page.php">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                      </form>
+                    </li>
+                </ul>
+            </div>
+        </nav>
       </div>
+
       {% block content %}{% endblock %}
     </div>
 
