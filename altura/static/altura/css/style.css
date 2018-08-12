@@ -5,18 +5,15 @@
     /* background: #aaa; */
 }
 
-.empresa-bg {
-  background: url("../../altura/img/escalera_bg_empresa.jpg") no-repeat;
-  background-size: cover;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  opacity: 0.3
-
+.empresa-info {
+  background: url("../../altura/img/soltecaltura_logo_only.jpg") no-repeat;
+   /* no-repeat; */
+   background-size: cover;
 }
 
-.empresa-bg, .h1, .h2, .p {
-  font-weight: bold;
-  color: #000000;
+.empresa-side-pic {
+  background: url("../../altura/img/empresa_bg_pic.jpg");
+  background-size: cover;
 }
 
 .hacalogo {
@@ -30,6 +27,10 @@
   width: 104px;
 }
 #foto_carritos {
-  height: 260px;
-  width: 260px;
+  background-size: auto;
+}
+
+.border-carritos {
+  border-style: solid;
+  border-color: silver;
 }

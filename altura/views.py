@@ -7,3 +7,7 @@ def home(request):
 # Display EmpresaInfo
 def empresa(request):
     return render(request, 'altura/empresa.html')
+
+# TODO: Remove this view when done for production
+def practice(request):
+    return render(request, 'altura/practice.html')
