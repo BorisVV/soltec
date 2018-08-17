@@ -1,87 +1,95 @@
 {% extends 'altura/base.html' %}
 
+{% block title %}Home{% endblock %}
+
 {% block content %}
-  <div class="row">
-    <div class="col-md-8">
-      <div class="col-sm-12">
-        <h2>Bienvenidos a:</h2>
-        <div class="row">
-          <!--logosoltec  -->
-          <div class="col-sm-6">
-            <a href="{% url 'empresa' %}">
-              <img class="" src="static/altura/img/logosoltec.jpg" alt="SoltecAltura logo"></a>
-          </div>
-          <div class="col-sm-6">
-            <p class="float-right">Representantes de:</p>
-            <!-- target="_blank" opens the page in newtab  -->
-            <a href="https://www.haca.com/index.php/en/" target="_blank">
-              <img src="../static/altura/img/hacalogo.png" class="float-right"></a>
-          </div>
-        </div>
-      </div>
-      <span class="col-sm-12 text-center">
-        <h2>Carritos</h2>
-        <h5>Foto de los carrito:</h5>
-      </span>
-      <div class="col-sm-12">
-        <div class="row" id="foto_carritos">
-          <div class="border-carritos col-sm-4">
-            <img src="static/altura/img/carrito1.png" alt="Carrito"><br>foto 1
-            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-            <p>Lorem ipsum dolor sit ame.</p>
-          </div>
-          <div class="border-carritos col-sm-4">
-            <img src="static/altura/img/05297450.jpg" alt="05297450"><br>foto 2
-          </div>
-          <div class="border-carritos col-md-4">
-            <div class="fakeimg">Foto falsa
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-8 mt-2">
+        <div class="col-sm-12">
+          <h2>Bienvenidos a:</h2>
+          <div class="row">
+            <!--logosoltec  -->
+            <div class="col-sm-6">
+              <a href="{% url 'empresa' %}">
+                <img class="" src="static/altura/img/logosoltec.jpg" alt="SoltecAltura logo"></a>
+            </div>
+            <div class="col-sm-6">
+              <p class="float-right">Representantes de:</p>
+              <!-- target="_blank" opens the page in newtab  -->
+              <a href="https://www.haca.com/index.php/en/" target="_blank">
+                <img src="../static/altura/img/hacalogo.png" class="float-right"></a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="row mt-4">
-        <div class="col-sm-4">
-          <h3>Some Links</h3>
-          <ul class="nav nav-link flex-column">
-            <li class="nav-item">
-              <a class="nav-link" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <hr class="d-sm-none">
+        <span class="col-sm-12 text-center">
+          <h2>Carritos</h2>
+          <h5>Foto de los carrito:</h5>
+        </span>
+        <div class="col-sm-12">
+          <div class="row" id="foto_carritos">
+            <div class="border-carritos col-sm-4">
+              <img src="static/altura/img/carrito1.png" alt="Carrito"><br>foto 1
+              <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+              <p>Lorem ipsum dolor sit ame.</p>
+            </div>
+            <div class="border-carritos col-sm-4">
+              <img src="static/altura/img/05297450.jpg" alt="05297450"><br>foto 2
+            </div>
+            <div class="border-carritos col-md-4">
+              <div class="fakeimg">Foto falsa
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-6">
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Dec 7, 2017</h5>
-          <div class="fakeimg">Fake Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <br>
-          <h2>TITLE HEADING</h2>
-          <h5>Title description, Sep 2, 2017</h5>
-          <div class="fakeimg">Fake Image</div>
-          <p>Some text..</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <div class="row">
+          <div class="col-sm-4">
+            <h3>Some Links</h3>
+            <ul class="nav nav-link flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Active</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            <br>
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg">Fake Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div id="scrolling-section" class="col-sm-12">
-        <img src="../static/altura/img/bg_rojo.jpg" alt="Foto aqui">
+      <div class="col-md-4 mt-2">
+        <div class="sticky text-center">
+          <h2>Nuevos Productos</h2>
+          <a href="{% url 'empresa' %}">
+          <img src="../static/altura/img/type_0529.74.jpg" alt="Foto aqui"></a>
+          <p>type_0529.74</p>
+        </div>
+
       </div>
     </div>
   </div>
+
   <!-- footer     -->
+
   <div class="jumbotron text-center" style="margin-bottom:0">
     <p>Footer</p>
   </div>
-
 {% endblock %}

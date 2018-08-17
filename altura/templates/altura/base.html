@@ -7,7 +7,8 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+                                                    <!-- , shrink-to-fit=no -->
     <!-- This is to add some more personal touches to the page etc. -->
     <link rel="stylesheet" href="{% static 'altura/css/style.css' %}" type="text/css">
     <script src="{% static 'altura/js/style.js' %}"></script>
@@ -20,7 +21,7 @@
   </head>
 
   <body>
-    <div class="container-fluid pr-2 mt-1">
+    <div class="container-fluid mt-1">
       <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center">
           <a href="{% url 'home' %}" class="navbar-brand d-flex w-50 mr-auto">
             <img src="../static/altura/img/soltecaltura_logo_only.jpg" width="40px" alt="Soltec Altura"></a>
@@ -61,10 +62,9 @@
           </div>
       </nav>
 
-      <div class="container-fluid bg-light mt-2">
-        {% block content %}{% endblock %}
-      </div>
     </div>
+
+    {% block content %}{% endblock %}
 
 
     <!-- Optional JavaScript -->
