@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <div class="container-fluid mt-1">
+    <div class="container-fluid mt-1 bg-dark">
       <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center">
           <a href="{% url 'home' %}" class="navbar-brand d-flex w-50 mr-auto">
             <img src="../static/altura/img/soltecaltura_logo_only.jpg" width="40px" alt="Soltec Altura"></a>
@@ -60,12 +60,10 @@
                   </li>
               </ul>
           </div>
-      </nav>
-
+        </nav>
     </div>
 
     {% block content %}{% endblock %}
-
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

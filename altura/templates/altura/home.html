@@ -5,6 +5,27 @@
 {% block content %}
   <div class="container-fluid">
     <div class="row">
+      <div class="col-md-2 background-home">
+        <div class="sticky-left">
+          <div class="col-sm-4">
+            <!-- <h3>Some Links</h3> -->
+              <ul class="nav nav-link flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Noticias</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
       <div class="col-md-8 mt-2">
         <div class="col-sm-12">
           <h2>Bienvenidos a:</h2>
@@ -43,23 +64,6 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-sm-4">
-            <h3>Some Links</h3>
-            <ul class="nav nav-link flex-column">
-              <li class="nav-item">
-                <a class="nav-link" href="#">Active</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-              </li>
-            </ul>
-          </div>
           <div class="col-sm-6">
             <h2>TITLE HEADING</h2>
             <h5>Title description, Dec 7, 2017</h5>
@@ -75,8 +79,8 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4 mt-2">
-        <div class="sticky text-center">
+      <div class="col-md-2 background-home">
+        <div class="sticky-right text-center">
           <h2>Nuevos Productos</h2>
           <a href="{% url 'empresa' %}">
           <img src="../static/altura/img/type_0529.74.jpg" alt="Foto aqui"></a>

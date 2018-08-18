@@ -1,3 +1,17 @@
+body {
+  /* background: url('../../altura/img/image-1.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; */
+}
+
+.background-home {
+  background-color: lightgray;
+  background-size: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
 .fakeimg {
     height: 200px;
@@ -36,11 +50,11 @@
 }
 
 /* This is important that the top is set to some px or else the sticky doesn't work */
-.sticky {
+.sticky-right {
   position: sticky;
   top: 2px;
 }
-
-/* .tall {
-  height: 100vh;
-} */
+.sticky-left {
+  position: sticky;
+  top: 2px;
+}
