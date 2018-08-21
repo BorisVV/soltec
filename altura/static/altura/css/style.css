@@ -26,21 +26,13 @@
   height: 104px;
   width: 104px;
 }
-#foto_carritos {
-  /* background-size: auto; */
-}
-
-/* .border-carritos {
-  border-style: solid;
-  border-color: silver;
-} */
 
 /* This is important that the top is set to some px or else the sticky doesn't work */
-.sticky-right {
+.sticky-left, .sticky-right{
   position: sticky;
   top: 2px;
 }
-.sticky-left {
-  position: sticky;
-  top: 2px;
+
+.border-l, .border-r {
+  border: thick double #32a1ce;
 }

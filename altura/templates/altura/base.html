@@ -7,7 +7,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
                                                     <!-- , shrink-to-fit=no -->
     <!-- This is to add some more personal touches to the page etc. -->
     <link rel="stylesheet" href="{% static 'altura/css/style.css' %}" type="text/css">
@@ -22,44 +22,45 @@
 
   <body>
     <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center mt-4">
-        <a href="{% url 'home' %}" class="navbar-brand d-flex w-50 mr-auto">
-          <img src="../static/altura/img/soltecaltura_logo_only.jpg" width="40px" alt="Soltec Altura"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-            <ul class="navbar-nav w-100 justify-content-center">
-              <!-- TODO:  -->
-              <!-- This li is for Practice and will need to be revomed. -->
-              <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'practice' %}">Practice</a>
+      <a href="{% url 'home' %}" class="navbar-brand d-flex w-30 mr-auto">
+        <img src="../static/altura/img/soltecaltura_logo_only.jpg" width="40px" alt="Soltec Altura"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+          <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item disabled">
+                <a class="nav-link" href="//codeply.com">Productos</a></a>
+            </li>
+            <li class="nav-item disabled">
+                <a class="nav-link" href="#">Contactar</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'empresa' %}">Empresa</a>
+            </li>
+          </ul>
+          <!-- TODO: This commented for the search bar for future use -->
+          <!-- <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Right</a>
               </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'home' %}">Home</a>
+              <li class="float-right">
+                <form class="form-inline" action="/action_page.php">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                  <button class="btn btn-success" type="submit">Buscar</button>
+                </form>
               </li>
-              <li class="nav-item disabled">
-                  <a class="nav-link" href="//codeply.com">Productos</a></a>
-              </li>
-              <li class="nav-item disabled">
-                  <a class="nav-link" href="#">Contactar</a>
-              </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'empresa' %}">Empresa</a>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#">Right</a>
-                </li> -->
-                <li class="float-right">
-                  <form class="form-inline" action="/action_page.php">
-                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-success" type="submit">Buscar</button>
-                  </form>
-                </li>
-            </ul>
-        </div>
-      </nav>
+          </ul> -->
+          <ul class="nav navbar-nav ml-auto w-30 justify-content-end">
+            <li class="float-right">
+              <a href="https://www.haca.com/index.php/en/" class="bg-light"><img src="../static/altura/img/hacalogo-solo.png" width="60px" alt="Haca"></a>
+            </li>
+          </ul>
+      </div>
+    </nav>
 
     {% block content %}{% endblock %}
 
