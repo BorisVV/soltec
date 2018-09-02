@@ -6,13 +6,13 @@
 }
 
 .empresa-info {
-  background: url("../../altura/img/soltecaltura_logo_only.jpg") no-repeat;
+  background: white;
    /* no-repeat; */
    background-size: cover;
 }
 
 .empresa-side-pic {
-  background: url("../../altura/img/empresa_bg_pic.jpg");
+  background-color: lightgray;
   background-size: cover;
 }
 
@@ -29,10 +29,10 @@
 
 /* This is important that the top is set to some px or else the sticky doesn't work */
 .sticky-left, .sticky-right{
-  position: sticky;
   top: 2px;
+  position: sticky;
 }
 
 .border-l, .border-r {
-  border: thick double #32a1ce;
+  border-style: dotted;
 }

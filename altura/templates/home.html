@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  <div class="container-fluid bg-light">
+    <div class="container col-md-10">
+      <div class="row">
+      <div class="col-md-12">
+        <div class="col-sm-12">
+          <div class="row">
+            <!--logosoltec  -->
+            <div class="col-sm-6">
+              <h2>Bienvenidos a:</h2>
+              <a href="{% url 'empresa' %}">
+                <img class="logosoltec" src="/static/img/logosoltec.jpg" alt="SoltecAltura logo"></a>
+            </div>
+            <div class="col-sm-6">
+              <div class="float-right">
+                <p>Representantes de:</p>
+                <!-- target="_blank" opens the page in newtab  -->
+                <a href="https://www.haca.com/index.php/en/" target="_blank">
+                  <img src="/static/img/hacalogo.png"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="col-sm-12 text-center">
+          <h2>Fotos de carritos:</h2>
+        </span>
+        <div class="row border mb-4">
+          <div class="col-sm-6">
+              <img src="/static/img/carrito1.png" alt="Carrito">
+          </div>
+          <div class="col-sm-6">
+            <span>Ejemplo 1, Este carrito...</span>
+          </div>
+        </div>
+        <div class="row border mb-4">
+          <div>
+              <img src="/static/img/05297450.jpg" alt="05297450">
+          </div>
+          <div class="ml-2">
+            <span>foto 2,/////////////////////////////////////////////</span><br>
+            <span>foto,</span><br>
+            <span>foto aqui</span>
+            <p>aqui</p>
+            <p>paragraph</p>
+          </div>
+        </div>
+        <div class="row border mb-4">
+          <div class="fakeimg">Foto falsa</div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <!-- footer     -->
+
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Footer</p>
+  </div>
+{% endblock %}
