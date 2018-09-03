@@ -1,11 +1,40 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}Cursos De Formacion{% endblock %}
 
 {% block content %}
     <div class="container-fluid bg-light">
         <div class="container col-sm-8">
-            <img src="{% static 'img/foto_cursos_formacion.jpg' %}" alt="Foto de Cursos-Formacion"></img>
+            <div class="row p-2">
+                <div class="col-sm-6">
+                    <img src="{% static 'img/escalera_bg_empresa.jpg' %}" width="100%" alt="Foto de Cursos-Formacion"></img>
+                </div>
+                <div class="col-sm-6">
+                    <span class="text-justify">
+                        <p>
+                            El curso se compone de una parte teórica en donde se infoma sobre las nomativas vigentes referentes a los 
+                            sistemas de seguridad en altura, se imparten conocimientos generales de seguridad y se dan a conocer los 
+                            distintos componentes de la linea de vida HACA y las características generales del sistema de seguridad 
+                            para trabajos en altura, sistema que está certificado en su conjunto.  
+                        </p>
+                        <p>
+                           Se presentan los diversos productos HACA: escaleras con raíl integrado, raíl para acoplar a escaleras o bién 
+                           el sistema HACA Móvil. 
+                        </p>
+                        <p>
+                           Se explican las distintas aplicaciones para diferentes tipos de torres, mástiles, antenas y edificios, 
+                           con los diversos accesorios necesarios para cada tipo de base de sustenatación del sistema HACA. 
+                        </p>
+                        <p>
+                           Y una parte práctica que capacitará a los participantes para realizar una revisión y la  posterior certificación 
+                           de una linea de vida. Incluiremos en el curso la formación para reposición de pequeños componentes (no railes) que 
+                           conforman en la línea de vida, de modo tal de que el participante al finalizar estará en condiciones para elaborar 
+                           el correspondiente certificado. 
+                        </p>
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
 
