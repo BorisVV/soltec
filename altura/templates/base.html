@@ -7,7 +7,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
                                                     <!-- , shrink-to-fit=no -->
     <!-- This is to add some more personal touches to the page etc. -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
@@ -21,9 +21,9 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center">
+    <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center p-3">
       <a href="{% url 'home' %}" class="navbar-brand d-flex w-30 mr-auto">
-        <img src="/static/img/soltecaltura_logo_only.jpg" width="40px" height="40px" alt="Soltec Altura"></a>
+        <img src="{% static 'img/soltecaltura_logo_only.jpg' %}" width="40px" height="40px" alt="Soltec Altura"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -32,15 +32,16 @@
             <li class="nav-item active">
                 <a class="nav-link" href="{% url 'home' %}">Home</a>
             </li>
-            <li class="nav-item disabled">
-                <a class="nav-link" href="#">Productos</a></a>
-            </li>
-            <li class="nav-item disabled">
-                <a class="nav-link" href="#">Contactar</a>
-            </li>
+              </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{% url 'empresa' %}">Empresa</a>
             </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{% url 'cursos_formacion' %}">Cursos De Formacion</a></a>
+            </li>
+            <li class="nav-item disabled">
+                <a class="nav-link" href="#">Contactar</a>
           </ul>
           <!-- TODO: This commented for the search bar for future use -->
           <!-- <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -56,13 +57,27 @@
           </ul> -->
           <ul class="nav navbar-nav ml-auto justify-content-end bg-white">
             <li class="float-right">
-              <a href="https://www.haca.com/index.php/en/" class="bg-light"><img src="/static/img/hacalogo-solo.png" width="60px" height="40px" alt="Haca"></a>
+              <a href="https://www.haca.com/index.php/en/" class="bg-light"><img src="{% static 'img/hacalogo-solo.png' %}" width="60px" height="40px" alt="Haca"></a>
             </li>
           </ul>
       </div>
     </nav>
 
     {% block content %}{% endblock %}
+  
+    <!-- footer     -->
+
+    <div class="jumbotron text-center" style="m-0 .text-info">
+      <h3><a href="{% url 'home' %}">
+        <img src="{% static 'img/soltecaltura_logo_only.jpg' %}" with="40" height="40"></img>
+        Soltec Altura
+      </a> <br>S.L., Soluciones Técnicas de Altura</h3>
+      <br>
+      <span>
+        © 2007 SOLTEC ALTURA |  Cala Tamarit - TARRAGONA | Tel: +34 653 94 06 97 | 
+        Fax: +34 977 20 80 62
+      </span>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -8,6 +8,8 @@ def home(request):
 def empresa(request):
     return render(request, 'empresa.html')
 
-# TODO: Remove this view when done for production
-def practice(request):
-    return render(request, 'practice.html')
+# Display page for cursos de foramacion
+def cursos_formacion(request):
+    return render(request, 'cursos_formacion.html')
+
+
