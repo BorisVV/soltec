@@ -6,6 +6,11 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
+    
+    <link rel="icon" href="data:;base64,=">
+    <!--The above and below lines should be removed for productions.-->
+    <!--This next lines incase the above one did not work on the environment aws3-->
+    <!--<link rel="shortcut icon" href="">-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
                                                     <!-- , shrink-to-fit=no -->
@@ -22,7 +27,7 @@
 
   <body>
     <div class="container-fluid bg-light" id="top-page">
-      <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center p-3">
+      <nav class="navbar navbar-dark navbar-expand-md bg-dark justify-content-center">
         <a href="{% url 'home' %}" class="navbar-brand d-flex w-30 mr-auto">
           <img src="{% static 'img/soltecaltura_logo_only.jpg' %}" width="40px" height="40px" alt="Soltec Altura"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
@@ -58,7 +63,7 @@
             </ul> -->
             <ul class="nav navbar-nav ml-auto justify-content-end bg-white">
               <li class="float-right">
-                <a href="https://www.haca.com/index.php/en/" class="bg-light"><img src="{% static 'img/hacalogo-solo.png' %}" width="60px" height="40px" alt="Haca"></a>
+                <a href="https://www.haca.com/index.php/en/" class="bg-light"><img src="{% static 'img/hacalogo-solo.png' %}" width="60px" height="40px" alt="Haca" target="_blank"></a>
               </li>
             </ul>
         </div>
