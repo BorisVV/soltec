@@ -13,3 +13,5 @@ def cursos_formacion(request):
     return render(request, 'cursos_formacion.html')
 
 
+def practice(request):
+    return render(request, 'practice.html')

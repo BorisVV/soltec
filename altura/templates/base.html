@@ -1,4 +1,4 @@
-{% load static %}
+{% load staticfiles %}
 
 <!doctype html>
 
@@ -16,7 +16,7 @@
                                                     <!-- , shrink-to-fit=no -->
     <!-- This is to add some more personal touches to the page etc. -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
-    <script href="{% static 'js/style.js' %}"></script>
+    <script type="text/javascript" src="{% static "js/script.js" %}"></script>
 
     <!-- This is the CDN option, which is faster and uses cache to save time when revisiting. -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -38,16 +38,20 @@
               <li class="nav-item active">
                   <a class="nav-link" href="{% url 'home' %}">Home</a>
               </li>
-                </li>
               <li class="nav-item active">
                   <a class="nav-link" href="{% url 'empresa' %}">Empresa</a>
               </li>
-  
               <li class="nav-item active">
                   <a class="nav-link" href="{% url 'cursos_formacion' %}">Cursos De Formacion</a></a>
               </li>
               <li class="nav-item active">
                   <a class="nav-link" href="#bottom-page">Contactar</a>
+              </li>
+              
+              <!--Remove for production-->
+              <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'practice' %}">Practice</a>
+              </li>
             </ul>
             <!-- TODO: This commented for the search bar for future use -->
             <!-- <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -63,7 +67,7 @@
             </ul> -->
             <ul class="nav navbar-nav ml-auto justify-content-end bg-white">
               <li class="float-right">
-                <a href="https://www.haca.com/index.php/en/" class="bg-light"><img src="{% static 'img/hacalogo-solo.png' %}" width="60px" height="40px" alt="Haca" target="_blank"></a>
+                <a href="https://www.haca.com/index.php/en/" class="bg-light"  target="_blank"><img src="{% static 'img/hacalogo-solo.png' %}" width="60px" height="40px" alt="Haca"></a>
               </li>
             </ul>
         </div>
@@ -74,17 +78,17 @@
       <!-- footer     -->
   
       <div class="jumbotron text-center" style="m-0 .text-info" id="bottom-page">
-        <h3><a href="{% url 'home' %}">
-          <img src="{% static 'img/soltecaltura_logo_only.jpg' %}" with="40" height="40"></img>
-          Soltec Altura
-        </a> <br>S.L., Soluciones Técnicas de Altura</h3>
-        <br>
         <span>
-          © 2007 SOLTEC ALTURA |  Cala Tamarit - TARRAGONA | Tel: +34 653 94 06 97 | 
-          Fax: +34 977 20 80 62
+          <h3><a href="{% url 'home' %}">
+            <img src="{% static 'img/soltecaltura_logo_only.jpg' %}" with="40" height="40"></img>
+            Soltec Altura
+          </a> <br>S.L., Soluciones Técnicas de Altura</h3>
+          <p>© 2007 SOLTEC ALTURA |  Cala Tamarit - TARRAGONA | Tel: +34 653 94 06 97 | Fax: +34 977 20 80 62</p>
+          <p id="top-page"><a href="#top-page">Volver arriba!</a></p>
         </span>
-        <span id="top-page"><a class="nav-link" href="#top-page">Volver arriba!</a></span>
-      </div>
+      </div>  
+      
+      
     </div>
 
     <!-- Optional JavaScript -->
