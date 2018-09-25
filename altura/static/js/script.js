@@ -9,9 +9,9 @@ function cookiehintfadeOut(el){
       requestAnimationFrame(fade);
     }
   })();
-}  
-	
-window.addEventListener('load',	
+}
+
+window.addEventListener('load',
 	function () {
 		document.getElementById('cookiehintsubmit').addEventListener('click', function (e) {
 			e.preventDefault();
@@ -24,6 +24,6 @@ window.addEventListener('load',
 			document.cookie = 'reDimCookieHint=-1; expires=0; path=/';
 			cookiehintfadeOut(document.getElementById('redim-cookiehint'));
 			return false;
-		},false);		
+		},false);
 			}
 );
