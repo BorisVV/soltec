@@ -6,7 +6,7 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    
+
     <link rel="icon" href="data:;base64,=">
     <!--The above and below lines should be removed for productions.-->
     <!--This next lines incase the above one did not work on the environment aws3-->
@@ -47,11 +47,6 @@
               <li class="nav-item active">
                   <a class="nav-link" href="#bottom-page">Contactar</a>
               </li>
-              
-              <!--Remove for production-->
-              <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'practice' %}">Practice</a>
-              </li>
             </ul>
             <!-- TODO: This commented for the search bar for future use -->
             <!-- <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -72,11 +67,25 @@
             </ul>
         </div>
       </nav>
-  
+
       {% block content %}{% endblock %}
-    
+
+      {% block cookies %}
+        <div id="redim-cookiehint">
+          <div class="cookiecontent">
+            Cookies make it easier for us to provide you with our services. With the usage of our services you permit us to use cookies.	</div>
+            <div class="cookiebuttons">
+              <a id="cookiehintinfo" rel="nofollow" href="{% url 'empresa' %}" class="btn">More information</a>
+              <a id="cookiehintsubmit" rel="nofollow" href="{% url 'home' %}" class="btn">Ok</a>
+              <a id="cookiehintsubmitno" rel="nofollow" href="{% url 'home' %}" class="btn">Decline</a>
+            </div>
+          <div class="clr"></div>
+        </div>
+      {% endblock %}
+
+
       <!-- footer     -->
-  
+
       <div class="jumbotron text-center" style="m-0 .text-info" id="bottom-page">
         <span>
           <h3><a href="{% url 'home' %}">
@@ -86,9 +95,9 @@
           <p>© 2007 SOLTEC ALTURA |  Cala Tamarit - TARRAGONA | Tel: +34 653 94 06 97 | Fax: +34 977 20 80 62</p>
           <p id="top-page"><a href="#top-page">Volver arriba!</a></p>
         </span>
-      </div>  
-      
-      
+      </div>
+
+
     </div>
 
     <!-- Optional JavaScript -->
