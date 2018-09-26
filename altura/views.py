@@ -18,6 +18,3 @@ def cursos_formacion(request):
 
 def practice(request):
     return render(request, 'practice.html')
-
-def test(request):
-    return render(request, 'test.html')

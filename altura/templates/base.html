@@ -47,9 +47,6 @@
               <li class="nav-item active">
                   <a class="nav-link" href="#bottom-page">Contactar</a>
               </li>
-              <li class="nav-item active">
-                  <a class="nav-link" href="{% url 'test' %}">Test</a>
-              </li>
             </ul>
             <!-- TODO: This commented for the search bar for future use -->
             <!-- <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
@@ -72,6 +69,15 @@
       </nav>
 
       {% block content %}{% endblock %}
+
+      {% block foto-intro %}
+      <div class="container mt-4">
+        <div class="d-flex justify-content-center">
+          <img src="{% static 'img/foto_base.png' %}" alt="Foto base">
+        </div>
+      </div>
+      {% endblock %}
+
 
       {% block cookies %}
         <div id="redim-cookiehint">
