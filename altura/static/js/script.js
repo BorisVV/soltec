@@ -15,7 +15,7 @@ window.addEventListener('load',
 	function () {
 		document.getElementById('cookiehintsubmit').addEventListener('click', function (e) {
 			e.preventDefault();
-			document.cookie = 'reDimCookieHint=1; expires=Sat, 07 Sep 2019 23:59:59 GMT;57; path=/';
+			document.cookie = 'reDimCookieHint=1; expires=Sat, 07 Sep 2019 23:59:59 GMT;57; path="home.html"';
 			cookiehintfadeOut(document.getElementById('redim-cookiehint'));
 			return false;
 		},false);
@@ -25,5 +25,5 @@ window.addEventListener('load',
 			cookiehintfadeOut(document.getElementById('redim-cookiehint'));
 			return false;
 		},false);
-			}
+	}
 );
