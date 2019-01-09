@@ -4,6 +4,9 @@
 
 <html lang="en">
   <head>
+    <!-- Title of the the web page. -->
+    <title>{% block title %}SoltecAltura{% endblock %}</title>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
 
@@ -16,13 +19,18 @@
                                                     <!-- , shrink-to-fit=no -->
     <!-- This is to add some more personal touches to the page etc. -->
     <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
-    <script type="text/javascript" src="{% static "js/script.js" %}"></script>
+
+    <script type="text/javascript" src="{% static 'js/script.js' %}"></script>
 
     <!-- This is the CDN option, which is faster and uses cache to save time when revisiting. -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <title>{% block title %}SoltecAltura{% endblock %}</title>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -70,25 +78,20 @@
 
       {% block content %}{% endblock %}
 
-      <!-- footer     -->
-
-      <div class="jumbotron text-center" style="m-0 .text-info" id="bottom-page">
-        <span>
-          <h3><a href="{% url 'home' %}">
-            <img src="{% static 'img/soltecaltura_logo_only.jpg' %}" with="40" height="40"></img>
-            Soltec Altura
-          </a> <br>S.L., Soluciones Técnicas de Altura</h3>
-          <p>© 2007 SOLTEC ALTURA |  Cala Tamarit - TARRAGONA | Tel: +34 653 94 06 97 | Fax: +34 977 20 80 62</p>
-          <p id="top-page"><a href="#top-page">Volver arriba!</a></p>
-        </span>
-      </div>
     </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
+
+  <footer>
+    <!-- footer     -->
+    <div class="jumbotron text-center" style="m-0 .text-info" id="bottom-page">
+      <span>
+        <h3><a href="{% url 'home' %}">
+          <img src="{% static 'img/soltecaltura_logo_only.jpg' %}" with="40" height="40"></img>
+          Soltec Altura
+        </a> <br>S.L., Soluciones Técnicas de Altura</h3>
+        <p>© 2007 SOLTEC ALTURA |  Cala Tamarit - TARRAGONA | Tel: +34 653 94 06 97 | Fax: +34 977 20 80 62</p>
+        <p id="top-page"><a href="#top-page">Volver arriba!</a></p>
+      </span>
+    </div>
+  </footer>
 </html>
