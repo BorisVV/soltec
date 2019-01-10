@@ -1,4 +1,7 @@
-
+html, body {
+  height: 100%;
+  width: 100%;
+}
 
 .empresa-info {
   background: white;
@@ -41,4 +44,10 @@
     line-height: 20px;
     color: #ffffff;
     display: block;
+}
+
+
+/* Practice page. Remove for production. */
+.container {
+  margin: 5px;
 }
